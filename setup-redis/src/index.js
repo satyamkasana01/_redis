@@ -19,3 +19,7 @@ app.get('/mongo', async(req, res) => {
     }
     res.json({mongo: 'connected', database: mongoose.connection.name});
 })
+
+
+app.listen(3001, () => {    console.log('Server is running on port 3001');
+})
